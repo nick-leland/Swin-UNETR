@@ -33,7 +33,19 @@ The following demonstrates an animation of original images (left) and their reco
 
 
 # Installing Dependencies
-Create conda env with yml file and activate
+
+## Python virtual environment (recommended)
+```
+python3 -m venv .venv
+source .venv/bin/activate  # .\.venv\Scripts\activate on Windows
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+The repository ships with a `.venv` folder entry in `.gitignore`, so the environment will stay local to your machine.  
+If you prefer not to keep the environment around, just remove the `.venv` directory.
+
+## Conda environment (legacy instructions)
 ```
 conda env create -f environment.yml
 conda activate swin_unetr
